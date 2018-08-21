@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dayreport>
+	<sortCol></sortCol>
+	<sortOrder></sortOrder>
+	<reportId>141627494612733567</reportId>
+	<chartChange>undefined</chartChange>
+	<chartType>undefined</chartType>
+	<chartSortType>undefined</chartSortType>
+	<sortField>undefined</sortField>
+	<queryType>exportpdf</queryType>
+	<condition>
+		<widgetType>datefield</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>br_gl_cash_journal</modelId>
+		<colCode>data_date</colCode>
+		<operator>=</operator>
+		<value>${data_date}</value>
+	</condition>
+	<condition>
+		<widgetType>treepicker</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>br_gl_cash_journal</modelId>
+		<colCode>organ_code</colCode>
+		<operator>=</operator>
+		<value>${organ_id}</value>
+	</condition>
+	<condition>
+		<widgetType>combobox</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>br_gl_cash_journal</modelId>
+		<colCode>rpt_freq</colCode>
+		<operator>=</operator>
+		<value>6</value>
+	</condition>
+	<condition>
+		<widgetType>combobox</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>br_gl_cash_journal</modelId>
+		<colCode>curr_code</colCode>
+		<operator>=</operator>
+		<value>CNY</value>
+	</condition>
+	<condition>
+		<widgetType>combobox</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>br_gl_cash_journal</modelId>
+		<colCode>data_unit</colCode>
+		<operator>=</operator>
+		<value>1</value>
+	</condition>
+	<additional>
+		<conditionValue>机构名称:${organ_name} </conditionValue>
+		<conditionPosition>A3</conditionPosition>
+	</additional>
+	<additional>
+		<conditionValue>日    期:${export_date}</conditionValue>
+		<conditionPosition>B3</conditionPosition>
+	</additional>
+	<additional>
+		<conditionValue>币    种:人民币</conditionValue>
+		<conditionPosition>C3</conditionPosition>
+	</additional>
+	<additional>
+		<conditionValue>单    位:元</conditionValue>
+		<conditionPosition>D3</conditionPosition>
+	</additional>
+</dayreport>

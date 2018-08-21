@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dayreport>
+	<pagination.pageSize>100</pagination.pageSize>
+	<pagination.pageNumber>1</pagination.pageNumber>
+	<sortCol></sortCol>
+	<sortOrder></sortOrder>
+	<reportId>141826709647654644</reportId>
+	<chartChange>undefined</chartChange>
+	<chartType>undefined</chartType>
+	<chartSortType>undefined</chartSortType>
+	<sortField>undefined</sortField>
+	<queryType>exportpdf</queryType>
+	<condition>
+		<widgetType>datefield</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>dm_dp_balance</modelId>
+		<colCode>data_date</colCode>
+		<operator>=</operator>
+		<value>${data_date}</value>
+	</condition>
+	<condition>
+		<widgetType>combobox</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>dm_dp_balance</modelId>
+		<colCode>rpt_freq</colCode>
+		<operator>=</operator>
+		<value>4</value>
+	</condition>
+	<condition>
+		<widgetType>treepicker</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>dm_dp_balance</modelId>
+		<colCode>organ_code</colCode>
+		<operator>=</operator>
+		<value>${organ_id}</value>
+	</condition>
+	<condition>
+		<widgetType>combobox</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>dm_dp_balance</modelId>
+		<colCode>curr_code</colCode>
+		<operator>=</operator>
+		<value>CNY</value>
+	</condition>
+	<condition>
+		<widgetType>combobox</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>dm_dp_balance</modelId>
+		<colCode>data_unit</colCode>
+		<operator>=</operator>
+		<value>1</value>
+	</condition>
+	<additional>
+		<conditionValue>机构名称:${organ_name} </conditionValue>
+		<conditionPosition>A3</conditionPosition>
+	</additional>
+	<additional>
+		<conditionValue>日    期:${export_date}</conditionValue>
+		<conditionPosition>B3</conditionPosition>
+	</additional>
+	<additional>
+		<conditionValue>币    种:人民币</conditionValue>
+		<conditionPosition>C3</conditionPosition>
+	</additional>
+	<additional>
+		<conditionValue>单    位:元</conditionValue>
+		<conditionPosition>D3</conditionPosition>
+	</additional>
+</dayreport>

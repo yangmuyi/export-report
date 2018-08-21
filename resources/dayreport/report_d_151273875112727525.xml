@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dayreport>
+	<sortCol></sortCol>
+	<sortOrder></sortOrder>
+	<reportId>151273875112727525</reportId>
+	<chartChange>undefined</chartChange>
+	<chartType>undefined</chartType>
+	<chartSortType>undefined</chartSortType>
+	<sortField>undefined</sortField>
+	<queryType>exportpdf</queryType>
+	<condition>
+		<widgetType>treepicker</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>dm_ci_dacm_amountbal</modelId>
+		<colCode>organ_code</colCode>
+		<operator>=</operator>
+		<value>${organ_id}</value>
+	</condition>
+	<condition>
+		<widgetType>datefield</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>dm_ci_dacm_amountbal</modelId>
+		<colCode>data_date</colCode>
+		<operator>=</operator>
+		<value>${data_date}</value>
+	</condition>
+	<condition>
+		<widgetType>combobox</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>dm_ci_dacm_amountbal</modelId>
+		<colCode>acct_status</colCode>
+		<operator>=</operator>
+		<value></value>
+	</condition>
+	<condition>
+		<widgetType>combobox</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>dm_ci_dacm_amountbal</modelId>
+		<colCode>acct_type</colCode>
+		<operator>=</operator>
+		<value></value>
+	</condition>
+	<condition>
+		<widgetType>combobox</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>dm_ci_dacm_amountbal</modelId>
+		<colCode>rpt_freq</colCode>
+		<operator>=</operator>
+		<value>6</value>
+	</condition>
+	<additional>
+		<conditionValue>机构:${organ_name} </conditionValue>
+		<conditionPosition>A3</conditionPosition>
+	</additional>
+	<additional>
+		<conditionValue>频    度:日报</conditionValue>
+		<conditionPosition>B3</conditionPosition>
+	</additional>
+	<additional>
+		<conditionValue>报表日期:${export_date}</conditionValue>
+		<conditionPosition>C3</conditionPosition>
+	</additional>
+	<additional>
+		<conditionValue>账户类型:请选择</conditionValue>
+		<conditionPosition>D3</conditionPosition>
+	</additional>
+</dayreport>

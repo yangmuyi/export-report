@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dayreport>
+	<sortCol></sortCol>
+	<sortOrder></sortOrder>
+	<reportId>141636056573598939</reportId>
+	<chartChange>undefined</chartChange>
+	<chartType>undefined</chartType>
+	<chartSortType>undefined</chartSortType>
+	<sortField>undefined</sortField>
+	<queryType>exportpdf</queryType>
+	<condition>
+		<widgetType>datefield</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>br_dp_sleep_cust_bill</modelId>
+		<colCode>data_date</colCode>
+		<operator>=</operator>
+		<value>${data_date}</value>
+	</condition>
+	<condition>
+		<widgetType>treepicker</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>br_dp_sleep_cust_bill</modelId>
+		<colCode>organ_code</colCode>
+		<operator>=</operator>
+		<value>${organ_id}</value>
+	</condition>
+	<condition>
+		<widgetType>combobox</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>br_dp_sleep_cust_bill</modelId>
+		<colCode>rpt_freq</colCode>
+		<operator>=</operator>
+		<value>6</value>
+	</condition>
+</dayreport>

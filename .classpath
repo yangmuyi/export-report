@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/httpclient-4.5.5.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/httpcore-4.4.9.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/commons-configuration-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/commons-logging-api-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/commons-pool-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/ganymed-ssh2-build210.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/log4j-over-slf4j-1.6.3.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/logback-classic-0.9.29_pg.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/logback-core-0.9.29.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_43"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/UTF8/workspace/export-report/lib/jaxen-1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dayreport>
+	<sortCol></sortCol>
+	<sortOrder></sortOrder>
+	<reportId>141819907377731557</reportId>
+	<chartChange>undefined</chartChange>
+	<chartType>undefined</chartType>
+	<chartSortType>undefined</chartSortType>
+	<sortField>undefined</sortField>
+	<queryType>exportpdf</queryType>
+	<condition>
+		<widgetType>datefield</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>f_targ_comm</modelId>
+		<colCode>data_date</colCode>
+		<operator>=</operator>
+		<value>${data_date}</value>
+	</condition>
+	<condition>
+		<widgetType>treepicker</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>f_targ_comm</modelId>
+		<colCode>drill_organ</colCode>
+		<operator>=</operator>
+		<value>${organ_id}</value>
+	</condition>
+	<condition>
+		<widgetType>combobox</widgetType>
+		<systemCode>sys001</systemCode>
+		<modelId>f_targ_comm</modelId>
+		<colCode>rpt_freq</colCode>
+		<operator>=</operator>
+		<value>6</value>
+	</condition>
+	<additional>
+		<conditionValue>机构名称:${organ_name} </conditionValue>
+		<conditionPosition>A2</conditionPosition>
+	</additional>
+	<additional>
+		<conditionValue>日    期:${export_date}</conditionValue>
+		<conditionPosition>B2</conditionPosition>
+	</additional>
+	<additional>
+		<conditionValue></conditionValue>
+		<conditionPosition>C2</conditionPosition>
+	</additional>
+</dayreport>

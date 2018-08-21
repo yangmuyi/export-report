@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+        <encoding>UTF-8</encoding>
+        <login>
+        	<!-- 登录名 -->
+        	<username>admin</username>
+        	<!-- 登录密码 -->
+        	<password>1qaz2wsx</password>
+        	<!-- 登录地址 -->
+        	<url>http://172.16.87.158:9080/slsint</url>
+        	<export>
+        		<!-- 导出pdf报表地址 -->
+        		<url>http://172.16.87.158:9080/slsint/queryDataLog.do?method=viewReportDetailForMarket</url>
+        	</export>
+        </login>
+        <!-- 配置线程池 -->
+        <thread>
+        	<pool>
+        		<!-- 核心池的大小 -->
+        		<corePoolSize>5</corePoolSize>
+        		<!-- 线程池最大线程数 -->
+        		<maximumPoolSize>6</maximumPoolSize>
+        		<!-- 表示线程没有任务执行时最多保持多久时间会终止-->
+        		<keepAliveTime>200</keepAliveTime>
+        		<!-- 一个阻塞队列，用来存储等待执行的任务的大小 -->
+        		<number>500</number>
+        		<!-- 线程睡眠时间 -->
+        		<sleepTime>4000</sleepTime>
+        	</pool>
+        </thread>
+        
+        <!-- ****************日报******************** -->
+        <!-- 配置日报开始和结束日期 -->
+        <date>
+		<!-- 开始日期 -->
+		<begin>2018-05-9</begin>
+		<!-- 结束日期 -->
+		<end>2018-05-10</end>
+		</date>
+		
+		<!--配置日报xml文件存放相对路径  -->
+		<day>
+			<path>/conf/dayreport</path>
+		</day>
+		 <!-- ****************日报******************** -->
+		 
+		 
+		 <!-- ****************月报******************** -->
+		<!-- 配置月报开始和结束日期 -->
+		 <date>
+			 <month>
+				<!-- 开始日期 -->
+				<begin>2018-05-09</begin>
+				<!-- 结束日期 -->
+				<end>2018-05-10</end>
+			</month>
+		</date>
+		
+		<!--配置月报xml文件存放相对路径  -->
+		<month>
+			<path>/conf/monthreport</path>
+		</month>
+		 <!-- ****************月报******************** -->
+		 
+		 
+		 <!-- ****************季报******************** -->
+		<!-- 配置月报开始和结束日期 -->
+		 <date>
+			 <season>
+				<!-- 开始日期 -->
+				<begin>2017-05-09</begin>
+				<!-- 结束日期 左闭右开 需要多一天-->
+				<end>2018-05-10</end>
+			</season>
+		</date>
+		
+		<!--配置季报xml文件存放相对路径  -->
+		<season>
+			<path>/conf/seasonreport</path>
+		</season>
+		 <!-- ****************季报******************** -->
+		 
+		 
+		 <!-- ****************年报******************** -->
+		<!-- 配置年报开始和结束日期 -->
+		 <date>
+			 <year>
+				<!-- 开始日期 -->
+				<begin>2017-05-09</begin>
+				<!-- 结束日期 -->
+				<end>2018-05-10</end>
+			</year>
+		</date>
+		
+		<!--配置年报xml文件存放相对路径  -->
+		<year>
+			<path>/conf/yearreport</path>
+		</year>
+		 <!-- ****************年报******************** -->
+		 
+		 
+		 <!-- ****************日期跨度******************** -->
+		<!-- 配置年报开始和结束日期 -->
+		 <date>
+			 <span>
+				<!-- 开始日期 -->
+				<begin>2017-05-09</begin>
+				<!-- 结束日期 -->
+				<end>2018-05-10</end>
+			</span>
+		</date>
+		
+		<!--配置年报xml文件存放相对路径  -->
+		<span>
+			<path>/conf/spanreport</path>
+		</span>
+		 <!-- ****************日期跨度******************** -->
+		 
+		 
+		 
+		 <!-- ****************半年报******************** -->
+		<!-- 配置半年报开始和结束日期 -->
+		 <date>
+			 <halfyear>
+				<!-- 开始日期 -->
+				<begin>2017-05-09</begin>
+				<!-- 结束日期  左闭右开 需要多一天-->
+				<end>2018-05-10</end>
+			</halfyear>
+		</date>
+		
+		<!--配置半年报xml文件存放相对路径  -->
+		<halfyear>
+			<path>/conf/halfyearreport</path>
+		</halfyear>
+		 <!-- ****************半年报******************** -->
+		 
+		 
+		 <!-- ****************旬报******************** -->
+		<!-- 配置旬报开始和结束日期 -->
+		 <date>
+			 <tendays>
+				<!-- 开始日期 -->
+				<begin>2015-04-01</begin>
+				<!-- 结束日期  左闭右开 需要多一天-->
+				<end>2016-05-10</end>
+			</tendays>
+		</date>
+		
+		<!--配置旬报xml文件存放相对路径  -->
+		<tendays>
+			<path>/conf/tendaysreport</path>
+		</tendays>
+		 <!-- ****************旬报******************** -->
+</Config>
